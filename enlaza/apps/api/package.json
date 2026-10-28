@@ -1,0 +1,14 @@
+{
+  "name": "@enlaza/api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node dist/index.js",
+    "test": "node --test \"dist/tests/**/*.test.js\""
+  },
+  "dependencies": {
+    "@enlaza/shared": "*"
+  }
+}

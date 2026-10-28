@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>enlaza · acortador de URLs</title>
+  <link rel="stylesheet" href="/estilos.css" />
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 4.93"></path>
+          <path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L13 19.07"></path>
+        </svg>
+      </span>
+      <h1 class="nombre">enlaza</h1>
+    </div>
+    <p class="lema">Acorta, comparte y mide tus enlaces.</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="tarjeta">
+      <form id="formulario" class="formulario">
+        <label class="etiqueta" for="url">URL original</label>
+        <div class="campo">
+          <input id="url" type="url" placeholder="https://ejemplo.com/mi-enlace-largo" autocomplete="off" required />
+          <button type="submit">Acortar</button>
+        </div>
+      </form>
+
+      <div class="separador"></div>
+
+      <div class="encabezado-lista">
+        <h2>Enlaces recientes</h2>
+        <span class="pista">Haz clic en un enlace corto para probarlo</span>
+      </div>
+
+      <ul id="enlaces" class="lista"></ul>
+      <p class="vacio">Aún no has acortado ningún enlace.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <strong>enlaza</strong> · Código con Juan
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

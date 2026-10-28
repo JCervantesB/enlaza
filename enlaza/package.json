@@ -1,0 +1,20 @@
+{
+  "name": "enlaza",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo de práctica del curso de Context Engineering: un acortador de URLs",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @enlaza/shared && npm run build -w @enlaza/api",
+    "dev": "npm run build && node apps/api/dist/index.js",
+    "start": "node apps/api/dist/index.js",
+    "test": "npm run build && node --test \"apps/api/dist/tests/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}

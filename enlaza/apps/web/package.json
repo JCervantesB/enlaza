@@ -1,0 +1,6 @@
+{
+  "name": "@enlaza/web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panel web de enlaza (archivos estáticos servidos por la API)"
+}
